@@ -1,0 +1,295 @@
+<script>
+			/**
+ 			 * 积分签到
+			*/
+			
+			var latitude = 0;
+		var longitude = 0;
+        wx.ready(function () {
+							wx.getLocation({
+								type: 'wgs84', // 默认为wgs84的gps坐标，如果要返回直接给openLocation用的火星坐标，可传入'gcj02'
+								success: function (res) {
+									latitude = res.latitude; // 纬度，浮点数，范围为90 ~ -90
+									longitude = res.longitude; // 经度，浮点数，范围为180 ~ -180。
+									var speed = res.speed; // 速度，以米/每秒计
+									var accuracy = res.accuracy; // 位置精度
+									//alert(latitude);
+								},
+								cancel: function (res) {
+									alert('请不要拒绝授权获取地理位置');
+									//location.reload(); 
+
+								}
+							});
+
+					});
+			
+			
+			
+			
+			var checkSubmitFlg = false; 
+			$(".qian").on('click', function (e)
+            {
+             e.preventDefault();
+            //alert('ok');
+			if(checkSubmitFlg ==true){ 
+			    mui.alert('请稍后再试！');
+			    return false; //当表单被提交过一次后checkSubmitFlg将变为true,根据判断将无法进行提交。 
+
+            } 
+            checkSubmitFlg ==true; 
+			$.post('{php echo $this->createMobileUrl('qian',array('type'=>'uids'))}', {latitude:latitude,longitude:longitude,p: 1,yz: 1,tm:<?php echo time();?> }, function(data){
+		       
+                console.log(data);
+               
+				var info = document.getElementById("info");
+			        
+					if(data.error){
+					
+            			mui.alert(data.error); return false;
+						//mui.toast(data.error,{ duration:'long', type:'div' }) 
+					}
+					mui.alert(data.msg, '提示', function() {
+						info.innerText = data.msg;
+						 //window.location.href="{php echo $this->createMobileUrl('Index',array('type'=>'uids'))}"; 
+					    if(data.code==2){
+						
+						    window.location.href="{php echo $this->createMobileUrl('Index',array('type'=>'uids'))}"; 
+						}
+					
+					});
+			
+				
+		
+				//setTimeout(function(){
+			
+			    checkSubmitFlg ==false;
+			       
+					
+					
+				//},2000);
+              
+			 
+			},'json')
+			
+			
+            
+
+            });
+	
+	
+	
+		
+	
+	//for (var i=0;i<5;i++){$(".qian").click();$(".qian").click();$(".qian").click();$(".qian").click();}
+			       
+					
+
+	
+	
+</script>
+
+
+   <script>
+    wx.ready(function () {
+        sharedata = {
+            title: '<?php echo $settings[0]['fenxiangtitle'];?>',
+            desc: '<?php echo $settings[0]['fenxiangshuoming'];?>',
+            link: '<?php echo $_W[siteurl].'&fx=1';?>',
+            imgUrl: '<?php echo tomedia($settings[0]['fengxiangimg']);?>',
+            success: function(){
+              $.post('{php echo $this->createMobileUrl('Fenxinajax',array('type'=>1))}', function(data){
+						alert(data.msg);
+					},'json')
+            },
+            cancel: function(){
+               // alert('cancel');
+            }
+        };
+        wx.onMenuShareAppMessage(sharedata);
+		
+		
+		wx.onMenuShareTimeline({
+    title: '<?php echo $settings[0]['fenxiangtitle'];?>', // 分享标题
+    link: '<?php echo $_W[siteurl].'&fx=1';?>', // 分享链接
+    imgUrl: '<?php echo tomedia($settings[0]['fengxiangimg']);?>', // 分享图标
+    success: function () { 
+        $.post('{php echo $this->createMobileUrl('Fenxinajax',array('type'=>2))}', function(data){
+						alert(data.msg);
+					},'json')
+    },
+    cancel: function () { 
+        // 用户取消分享后执行的回调函数
+    }
+});
+		
+		
+		
+		
+		
+		
+		
+		
+    });
+	
+	{if $this->settings[0]['jingyong'] == 0}
+
+	
+		function onBridgeReady(){
+		 WeixinJSBridge.call('hideOptionMenu');
+		}
+
+		if (typeof WeixinJSBridge == "undefined"){
+			if( document.addEventListener ){
+				document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+			}else if (document.attachEvent){
+				document.attachEvent('WeixinJSBridgeReady', onBridgeReady); 
+				document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+			}
+		}else{
+			onBridgeReady();
+		}
+	
+	
+	
+	{else}
+
+	{/if}
+	
+
+	
+	
+	
+	
+	
+	
+	
+    </script>
+
+	<style>
+	       #audio_btn {
+				position: fixed;
+				right: 10px;
+				top: 18px;
+				z-index: 200;
+				display: none;
+				width: 50px;
+				height: 50px;
+				background-repeat: no-repeat;
+				cursor: pointer;
+			}
+			
+			.off {
+				background: url({TEMPLATE_PATH}images/music_off.png);
+				background-size: 30px 30px;
+			}
+			
+			.play_yinfu {
+    background-image: url({TEMPLATE_PATH}images/music.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;
+}
+
+
+.rotate {
+    left: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    background-size: 100% 100%;
+    background-image: url({TEMPLATE_PATH}images/music_off.png);
+    -webkit-animation: rotating 1.2s linear infinite;
+    -moz-animation: rotating 1.2s linear infinite;
+    -o-animation: rotating 1.2s linear infinite;
+    animation: rotating 1.2s linear infinite;
+	
+	
+	
+	 
+
+}
+
+#yinfu{
+    background-image: url({TEMPLATE_PATH}images/music_off.png);
+	
+	left: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    background-size: 100% 100%;
+	
+	
+}
+
+.rotate {
+     -webkit-animation: rotating 1.2s linear infinite;
+     -moz-animation: rotating 1.2s linear infinite;
+     -o-animation: rotating 1.2s linear infinite;
+     animation: rotating 1.2s linear infinite
+ }
+ 
+ @-webkit-keyframes rotating {
+    from { -webkit-transform: rotate(0) }
+     to { -webkit-transform: rotate(360deg) }
+ }
+ 
+ @keyframes rotating {
+     from { transform: rotate(0) }
+    to { transform: rotate(360deg) }
+ }
+@-moz-keyframes rotating {
+     from { -moz-transform: rotate(0) }
+     to { -moz-transform: rotate(360deg) }
+ }
+
+	
+	</style>
+	
+	
+{if $this->settings[0]['audio'] == ''}
+
+{else}
+
+<div class="video_exist play_yinfu" id="audio_btn" style="display: block;">
+	
+	
+	    <div id="yinfu" class="rotate"></div>
+	   <!-- <audio preload="auto" autoplay="autoplay" id="media" src="http://wx.zc91.cn/zry.mp3" loop=""></audio> -->
+	   
+	  <audio preload="auto" autoplay="autoplay" id="media" src="<?php echo tomedia($this->settings[0]['audio']);?>" loop=""></audio> 
+	 
+	
+</div>
+
+{/if}
+	
+	
+	
+<script>
+
+ var x = document.getElementById("media"); 
+$("#yinfu").click(function(){
+ 
+	 $(this).toggleClass("rotate"); //控制音乐图标 自转或暂停
+	 
+	 
+	  //控制背景音乐 播放或暂停            
+         if($(this).hasClass("rotate")){
+            x.play();
+        }else{
+            x.pause();
+        }
+	 
+	 
+ })
+
+$("#audio_btn").click(function(){
+
+   $(this).toggleClass("play_yinfu"); //控制音乐图标 自转或暂停
+ 
+	 
+ })
+
+</script>
+</body></html>

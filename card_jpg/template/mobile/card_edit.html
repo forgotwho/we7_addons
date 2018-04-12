@@ -1,0 +1,289 @@
+{template 'card_header'}
+<style type="text/css">
+    .borderbottom{
+	    border-bottom:1px solid #F0F0F0;
+		font-size:14px;
+		color:#555;
+	}
+	.paddingtop20{
+	    padding-top:2px;
+	}
+    .setselect{
+	    border:0px solid #F0F0F0;color:#555 ;padding:0px;font-size:14px;
+	}
+    .uploadimage{
+        max-width:190px;max-height:220px;border:1px solid #CCCCCC;
+    }
+	#txt{
+	   height:24px;border:0px solid #F0F0F0; 
+	}
+	::-moz-placeholder { color: #C0C0C0 ; }
+    ::-webkit-input-placeholder { color:#C0C0C0 ; }
+    :-ms-input-placeholder { color:#C0C0C0 ; }
+</style>
+<div class="main">
+    <form action="" method="post" class="form-horizontal form" enctype="multipart/form-data" id="form1">
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active panel panel-default" id="basic">
+			    <div class="panel-heading">
+                    基本信息
+                </div>
+                <div class="panel-body">
+				    <div class="form-group borderbottom">
+                        <div class="col-xs-3 paddingtop20">姓名</div>
+                        <div class="col-xs-9">
+                            <input type="text" name="realname" value="{$card['realname']}" id="txt" placeholder="请输入姓名" style="" />
+                        </div>
+                    </div>
+                    <div class="form-group borderbottom">
+                        <div class="col-xs-3 paddingtop20">昵称</div>
+                        <div class="col-xs-9">
+						<input type="text" name="cardname" value="{$card['cardname']}" placeholder="请输入昵称" id="txt" />
+                        </div>
+                    </div>
+					<div class="form-group borderbottom">
+                        <div class="col-xs-3 paddingtop20">公司</div>
+                        <div class="col-xs-9">
+						    <input type="text" name="company" value="{$card['company']}" placeholder="请输入公司名称" id="txt" />
+                        </div>
+                    </div>
+                    <div class="form-group borderbottom">
+                        <div class="col-xs-3 paddingtop20">职务</div>
+                        <div class="col-xs-9">
+						    <input type="text" name="position" value="{$card['position']}" placeholder="请输入公司职务" id="txt" />
+                        </div>
+                    </div>
+					<div class="form-group borderbottom">
+                        <div class="col-xs-3 paddingtop20">电话</div>
+                        <div class="col-xs-9">
+						    <input type="text" name="tel" value="{$card['tel']}" placeholder="请输入公司电话" id="txt" />
+                        </div>
+                    </div>
+					<div class="form-group borderbottom">
+                        <div class="col-xs-3 paddingtop20">手机</div>
+                        <div class="col-xs-9">
+						    <input type="text" name="mobile" value="{$card['mobile']}" placeholder="请输入手机号码" id="txt" />
+                        </div>
+                    </div>
+					<div class="form-group borderbottom">
+                        <div class="col-xs-3 paddingtop20">邮箱</div>
+                        <div class="col-xs-9">
+						    <input type="text" name="email" value="{$card['email']}" placeholder="请输入邮箱" id="txt" />
+                        </div>
+                    </div>
+					<div class="form-group borderbottom">
+                        <div class="col-xs-3 paddingtop20">微信</div>
+                        <div class="col-xs-9">
+						    <input type="text" name="wechat" value="{$card['wechat']}" placeholder="请输入微信号" id="txt" />
+                        </div>
+                    </div>
+					<div class="form-group borderbottom">
+                        <div class="col-xs-3 paddingtop20">公司地址</div>
+                        <div class="col-xs-9">
+						    <input type="text" name="address" value="{$card['address']}" placeholder="请输入公司地址" id="txt" />
+                        </div>
+                    </div>
+                </div>
+				<div class="panel-heading" style="border:0px solid #CCCCCC;">
+                    名片设计
+                </div>
+                <div class="panel-body">
+				    <div class="form-group borderbottom" style="padding-bottom:5px;">
+                        <div class="col-xs-12">
+						    <script>
+							    function getmodel1(){
+								    document.getElementById("model5").style.display="none";
+								    document.getElementById("model1").style.display="block";
+									document.getElementById("model2").style.display="none";
+									document.getElementById("model3").style.display="none";
+									document.getElementById("model4").style.display="none";
+								}
+							    function getmodel2(){
+							    	document.getElementById("model5").style.display="none";
+								    document.getElementById("model1").style.display="none";
+								    document.getElementById("model2").style.display="block";
+									document.getElementById("model3").style.display="none";
+									document.getElementById("model4").style.display="none";
+								}
+								function getmodel3(){
+								    document.getElementById("model5").style.display="none";
+								    document.getElementById("model1").style.display="none";
+									document.getElementById("model2").style.display="none";
+								    document.getElementById("model3").style.display="block";
+									document.getElementById("model4").style.display="none";
+								}
+								function getmodel4(){
+								    document.getElementById("model5").style.display="none";
+								    document.getElementById("model1").style.display="none";
+									document.getElementById("model2").style.display="none";
+									document.getElementById("model3").style.display="none";
+								    document.getElementById("model4").style.display="block";
+								}
+							</script>
+							<div style="float:left;padding-bottom:10px;margin-right:12px;">
+							    <input type="radio" name="model" value="1" {if empty($card['model'])} checked="checked" {/if} {if $card['model'] == '1'} checked="checked" {/if} onclick="getmodel1()" /> 模板一
+							</div>
+							<div style="float:left;padding-bottom:10px;margin-right:12px;">
+							    <input type="radio" name="model" value="2" {if $card['model'] == '2'} checked="checked" {/if} onclick="getmodel2()" /> 模板二
+							</div>
+							<div style="float:left;padding-bottom:10px;margin-right:12px;">
+							    <input type="radio" name="model" value="3" {if $card['model'] == '3'} checked="checked" {/if} onclick="getmodel3()" /> 模板三
+							</div>
+							<div style="float:left;padding-bottom:10px;margin-right:12px;">
+							    <input type="radio" name="model" value="4" {if $card['model'] == '4'} checked="checked" {/if} onclick="getmodel4()" /> 模板四
+							</div>
+							<div id="model5" style="display:block;padding-top:7px;padding-bottom:10px;">
+							    <img src="../addons/card_jpg/data/model/model{php echo $card['model']?$card['model']:'1'}.png" alt="" style="{php echo $card['model']==4?'width:180px;height:200px;':'width:100%;'}padding-bottom:4px;border:1px solid #CCCCCC;" />
+					    	</div>
+                            <div id="model1" style="display:none;padding-top:7px;padding-bottom:10px;">
+							    <img src="../addons/card_jpg/data/model/model1.png" alt="" style="width:100%;padding-bottom:4px;border:1px solid #CCCCCC;" />
+					    	</div>
+						    <div id="model2" style="display:none;padding-top:7px;padding-bottom:10px;">
+							    <img src="../addons/card_jpg/data/model/model2.png" alt="" style="width:100%;padding-bottom:4px;border:1px solid #CCCCCC;" />
+						    </div>
+							<div id="model3" style="display:none;padding-top:7px;padding-bottom:10px;">
+							    <img src="../addons/card_jpg/data/model/model3.png" alt="" style="width:100%;padding-bottom:4px;border:1px solid #CCCCCC;" />
+						    </div>
+							<div id="model4" style="display:none;padding-top:7px;padding-bottom:10px;">
+							    <img src="../addons/card_jpg/data/model/model4.png" alt="" style="width:180px;max-width:180px;height:250px;padding-bottom:4px;border:1px solid #CCCCCC;" />
+						    </div>
+                        </div>
+                    </div>
+					<div class="form-group borderbottom" style="display:none;">
+					    <div class="col-xs-3 paddingtop20">名片字体</div>
+                        <div class="col-xs-9">
+                            <select name="font" class="setselect">
+							    <option value="sjt" {if empty($card['font'])}selected="selected"{/if} {if $card['font']=='sjt'}selected="selected"{/if}>宋简体</option>
+						    </select>
+                        </div>
+                    </div>
+					<div class="form-group borderbottom">
+					    <div class="col-xs-3 paddingtop20">字体颜色</div>
+                        <div class="col-xs-9">
+                            <select name="fontcolor" class="setselect">
+							    <option value="black" {if empty($card['fontcolor'])}selected="selected"{/if} {if $card['fontcolor']=='black'}selected="selected"{/if}>黑色</option>
+							    <option value="white" {if $card['fontcolor']=='white'}selected="selected"{/if}>白色</option>
+							    <option value="silver" {if $card['fontcolor']=='silver'}selected="selected"{/if}>银色</option>
+								<option value="darkred" {if $card['fontcolor']=='darkred'}selected="selected"{/if}>深红色</option>
+								<option value="blue" {if $card['fontcolor']=='blue'}selected="selected"{/if}>蓝色</option>
+								<option value="green" {if $card['fontcolor']=='green'}selected="selected"{/if}>绿色</option>
+								<option value="purple" {if $card['fontcolor']=='purple'}selected="selected"{/if}>紫色</option>
+								<option value="gold" {if $card['fontcolor']=='gold'}selected="selected"{/if}>金色</option>
+								<option value="cyan" {if $card['fontcolor']=='cyan'}selected="selected"{/if}>青色</option>
+						    </select>
+                        </div>
+                    </div>
+					<div class="form-group borderbottom">
+					    <div class="col-xs-3 paddingtop20">背景色</div>
+                        <div class="col-xs-9">
+                            <select name="colortype" class="setselect">
+							    <option value="white" {if empty($card['colortype'])}selected="selected"{/if} {if $card['colortype']=='white'}selected="selected"{/if}>白色</option>
+							    <option value="silver" {if $card['colortype']=='silver'}selected="selected"{/if}>银色</option>
+								<option value="black" {if $card['colortype']=='black'}selected="selected"{/if}>黑色</option>
+								<option value="darkred" {if $card['colortype']=='darkred'}selected="selected"{/if}>深红色</option>
+								<option value="blue" {if $card['colortype']=='blue'}selected="selected"{/if}>蓝色</option>
+						    </select>
+                        </div>
+                    </div>
+					<script>
+		                util.image($('.js-image-images'), function(url){
+	                        $('.js-image-baseimages').prev().val(url.attachment);
+	                        $('.js-image-baseimages').parent().next().find('img').attr('src',url.url);
+                        }, {
+                         	crop : false,
+                        	multiple : false
+                        });
+                    </script>
+					<div class="form-group borderbottom">
+                        <div class="col-xs-3">背景图</div>
+                        <div class="col-xs-9">
+                            <style>
+                                .webuploader-pick {color:#333;}
+                            </style>
+                            <div class="input-group">
+	                            <input type="hidden" name="baseimage" value="{php echo $card['baseimage']}" class="form-control" autocomplete="off" readonly="readonly">
+	                            <a class="btn btn-default js-image-baseimage" style="width:100px;height:36px;text-align:center;">上传图片</a>
+                            </div>
+                            <span class="help-block">
+	                            <img src="{php echo $card['baseimage']?tomedia($card['baseimage']):'../addons/card_jpg/template/image/nopic.jpg'}" class="uploadimage" alt="">
+								<em style="position:absolute;margin-left:7px;float:right;font-size:21px;line-height:1;color:#000;opacity:.2;" title="删除这张图" onclick="deleteImage(this)">x</em>
+                            </span>
+							<script>
+		                        util.image($('.js-image-baseimage'), function(url){
+	                        	    $('.js-image-baseimage').prev().val(url.attachment);
+	                         	    $('.js-image-baseimage').parent().next().find('img').attr('src',url.url);
+                         	    }, {
+                         		    crop : false,
+                        		    multiple : false
+                        	    });
+								function deleteImage(elm){
+				                    $(elm).prev().attr("src", "./resource/images/nopic.jpg");
+				                    $(elm).parent().prev().find("input").val("");
+			                    }
+                            </script>
+							<span class="help-block" >建议横形尺寸720*440,竖形尺寸400*720</span>
+                        </div>
+                    </div>
+					<div class="form-group">
+                        <div class="col-xs-3">logo</div>
+                        <div class="col-xs-9">
+                            <div class="input-group">
+	                            <input type="hidden" name="image" value="{php echo $card['image']}" class="form-control" autocomplete="off" readonly="readonly">
+	                            <a class="btn btn-default js-image-image" style="width:100px;height:36px;text-align:center;" >上传图片</a>
+                            </div>
+                            <span class="help-block">
+	                            <img src="{php echo $card['image']?tomedia($card['image']):'../addons/card_jpg/template/image/nopic.jpg'}" class="uploadimage" alt="">
+								<em  style="position:absolute;margin-left:7px;float:right;font-size:21px;line-height:1;color:#000;opacity:.2;" title="删除这张图" onclick="deleteImage(this)">x</em>
+                            </span>
+							<script>
+	                        util.image($('.js-image-image'), function(url){
+	                        	$('.js-image-image').prev().val(url.attachment);
+	                         	$('.js-image-image').parent().next().find('img').attr('src',url.url);
+                         	}, {
+                         		crop : false,
+                        		multiple : false
+                        	});
+                            </script>
+							<span class="help-block" >建议尺寸180*180</span>
+                        </div>
+                    </div>
+				</div>
+            </div>
+            <div style="text-align:center;">
+                <input type="hidden" name="op" value="card_edit" />
+				<input type="hidden" name="uid" value="{$uid}" />
+				<input type="hidden" name="cid" value="{$cid}" />
+                <input type="submit" name="submit" value="生成名片" style="width:90%;margin-bottom:25px;background-color:#2894FF;padding-top:10px;padding-bottom:10px;margin-left:10px;text-align:center;font-size:18px;color:#FFFFFF;border-radius:20px;" />
+			    <input type="hidden" name="token" value="{$_W['token']}" />
+            </div>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
+{php echo register_jssdk(false);}
+<script type="text/javascript">
+    var title = "{$cardset['sharetitle']}";
+	var desc = "{$cardset['sharedesc']}";
+	var imgurl = "{$shareimg}";
+	var linkurl = "{$linkurl}";
+    wx.ready(function () {
+		sharedata = {
+			title: title,
+			desc: desc,
+			link: linkurl,
+			imgUrl: imgurl,
+			success: function(){
+
+			},
+			cancel: function(){
+
+			}
+		};
+		wx.onMenuShareAppMessage(sharedata);
+		wx.onMenuShareTimeline(sharedata);
+	});
+
+	wx.showOptionMenu();
+</script>

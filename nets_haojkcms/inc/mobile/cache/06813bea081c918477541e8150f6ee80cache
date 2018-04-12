@@ -1,0 +1,147 @@
+a:3:{s:4:"time";i:1509524968;s:6:"expire";i:300;s:5:"value";s:6408:"<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<link rel="stylesheet" href="http://cms.91fyt.com/cms/web/css/index.css" type="text/css">
+		<script src="http://cms.91fyt.com/cms/web/js/jquery-1.9.1.js"></script>
+		<script src="http://cms.91fyt.com/cms/web/js/index.js"></script>
+		<title>好京客CMS导购系统-全部优惠券</title>
+	</head>
+
+	<body>
+		<div class="fo">
+			<div class="fo_1">
+				<div class="fo_1_1">
+					<span class="left">好京客,导购系统。好京客,导购系统</span>
+					<span class="right">
+            <span class="span_1">
+              <a href="javascript:void(0)" onclick="SetHome(this,window.location)">设为首页</a></span>
+					<span class="span_1">
+              <a href="javascript:void(0)" onclick="shoucang(document.title,window.location)">加入收藏</a></span>
+					</span>
+				</div>
+			</div>
+			<div class="fo_2">
+				<div class="fo_2_1">
+					<span class="f_shop">
+            <a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=index">
+              <img class="img_1" style="width: 158px;height: 55px;" src="http://cms.91fyt.com/cms/web/images/logo.png"></a>
+          </span>
+					<div class="search-group">
+						<form id="" name="" action="" data-pjax="true" class="searchf" style="position:relative">
+						    <input type="hidden" name="i" value="56"><input type="hidden" name="m" value="nets_haojkcms"><input type="hidden" name="do" value="index"><input type="hidden" name="c" value="entry">
+							<input type="hidden" name="ah" value="total">
+							<input class="input_1 kwd index-search-input" type="text" placeholder="请输入您要搜索关键词" name="kw" value="女装">
+							<input class="input_2" type="submit" id="" value="搜索">
+						</form>
+					</div>
+					<div class="f_update">
+						<img class="img a" src="http://cms.91fyt.com/cms/web/images/jdz_2.jpg">
+						<img class="a" src="http://cms.91fyt.com/cms/web/images/jdz_3.jpg">
+						<img class="a" src="http://cms.91fyt.com/cms/web/images/jdz_4.jpg"></div>
+				</div>
+			</div>
+			<div class="fo_3">
+				<ul>
+					<li class="li">
+						<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=index" class="f_fixed">
+							<img src="http://cms.91fyt.com/cms/web/images/f_clasify.png" alt="全部商品分类">全部商品分类</a>
+					</li>
+					<li>
+						<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=sift" class="f_select f_ju">精选好货</a>
+					</li>
+					<li style="position:relative" >
+						<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=real" >实时上新</a>
+						<span></span>
+					</li>
+					<li>
+						<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=total"  class="f_select ">全部优惠券</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="img_outer">
+			<img src="http://cms.91fyt.com/cms/web/images/total-banner.jpg"></div>
+		<div class="content content_new">
+			<div class="content_2">
+				<div class="yhq">
+					<img src="http://cms.91fyt.com/cms/web/images/f_coupont.png">
+				</div>
+				<div class="shai_">
+                    
+					<ul>
+						<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=total&kw=女装&sort=0&cname=">
+							<li class="shai_1 shai_active">默认</li>
+						</a>
+						<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=total&kw=女装&sort=1&cname=">
+							<li class="yes">券后价最低</li>
+						</a>
+						<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=total&kw=女装&sort=2&cname=">
+							<li class="yes">优惠最多</li>
+						</a>
+					</ul>
+				</div>
+
+				<div class="classfiy">
+					<span>商品分类 :</span>
+					<ul>
+						<li class="yes">
+							<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=total&kw=女装&sort=&cname=">全部</a>
+						</li><li class="yes">
+						<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=total&kw=女装&sort=&cname=食品保健">食品保健</a>
+					</li><li class="classfiy_active">
+						<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=total&kw=女装&sort=&cname=鞋品箱包">鞋品箱包</a>
+					</li><li class="yes">
+						<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=total&kw=女装&sort=&cname=运动户外">运动户外</a>
+					</li><li class="yes">
+						<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=total&kw=女装&sort=&cname=美妆个护">美妆个护</a>
+					</li><li class="yes">
+						<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=total&kw=女装&sort=&cname=男装">男装</a>
+					</li><li class="yes">
+						<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=total&kw=女装&sort=&cname=母婴玩具">母婴玩具</a>
+					</li><li class="yes">
+						<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=total&kw=女装&sort=&cname=文体车品">文体车品</a>
+					</li><li class="yes">
+						<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=total&kw=女装&sort=&cname=数码家电">数码家电</a>
+					</li><li class="yes">
+						<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=total&kw=女装&sort=&cname=居家生活">居家生活</a>
+					</li><li class="yes">
+						<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=total&kw=女装&sort=&cname=女装">女装</a>
+					</li><li class="yes">
+						<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=total&kw=女装&sort=&cname=内衣配饰">内衣配饰</a>
+					</li><li class="yes">
+						<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=total&kw=女装&sort=&cname="></a>
+					</li>
+					</ul>
+				</div>
+				<div class="sp">
+					<div class="sp_out">
+					
+					</div>
+				</div>
+				<div class="pages">
+					<div id="page">
+						<ul class="pagination">
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<img src="http://cms.91fyt.com/cms/web/images/word.png">
+			<br>
+			<div>Copyright 版权所有 好京客CMS导购系统
+				<noempty name="">All Rights Reserved.
+				<a href="http://www.miitbeian.gov.cn">苏ICP备14042987号</a>
+				</noempty>
+			</div>
+		</div>
+
+	</body>
+
+</html>";}

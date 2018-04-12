@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>{$title}</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../addons/card_jpg/template/css/mobile.css">
+</head>
+<style type="text/css">
+    .backgroundmain{
+        position:absolute;text-align:center;
+    }
+    .firstmain{
+	    position:absolute;padding-top:4px;
+	}
+    .headimg{
+	    margin-right:12px;width:65px;height:65px;border-radius:10%;float:left;
+	}
+    .headtitle{
+        overflow:hidden;height:30px;font-size:20px;
+    }
+	.cardbox{
+	    padding:12px 12px;text-align:center;padding-top:35px;
+	}
+    .cardimg{
+        width:100%;border:1px solid #CCCCCC;max-height:390px;
+    }
+    .card_icon{
+        height:31px;float:left;padding:4px 22px;
+    }
+    .card_title{
+        height:31px;padding:8px 22px 4px 22px;border-bottom:1px solid #E0E0E0;
+    }
+	.sharecard{
+	    width:90%;margin-bottom:40px;text-align:center;background-color:#2894FF;
+	    font-size:18px;color:#FFFFFF;padding-top:10px;padding-bottom:10px;border-radius:25px;
+	}
+    .editcard{
+        width:90%;margin-bottom:30px;text-align:center;background-color:#2894FF;
+	    font-size:18px;color:#FFFFFF;padding-top:10px;padding-bottom:10px;border-radius:25px;
+    }
+    .addcard{
+        width:90%;margin-top:80px;margin-bottom:20px;text-align:center;background-color:#2894FF;
+	    font-size:18px;color:#FFFFFF;padding-top:10px;padding-bottom:10px;border-radius:25px;
+    }
+    .advertisementimg{
+        width:100%;max-height:200px;
+    }
+</style>
+<body>
+    {if $sharecard!=null}
+	    <div class="backgroundmain">
+			<img src="../addons/card_jpg/template/image/bgimage.png" style="width:100%;" alt="" />
+			<a href="{php echo $this->createMobileUrl('active')}">
+                <button name="addcard" type="button" class="sharecard" style="margin-top:{if $sharecard['model']=='4'}220px{else}40px{/if};">进入我的名片</button>
+	        </a>
+			{if $cardset['advertisementimg']!=null}
+			    <a href="{php echo $cardset['advertisementurl']}">
+			        <img src="{php echo tomedia($cardset['advertisementimg'])}" class="advertisementimg" alt="" />
+				</a>
+			{/if}
+		</div>
+		<div class="firstmain">
+            <div class="box">
+                <div class="head_prize">
+                    <div class="prize_content">
+					    {if $sharecard['pic']!=null}
+					    <div class="cardbox">
+				     	    <img src="{php echo tomedia($sharecard['pic'])}" class="cardimg" alt="" />
+			    	    </div>
+						{/if}
+                    </div>
+                </div>
+		    </div>
+		</div>
+	{else}
+	    {if $card!=null}
+		    <div class="backgroundmain">
+				<img src="../addons/card_jpg/template/image/bgimage.png" style="width:100%;" alt="" />
+				<a href="{php echo $this->createMobileUrl('card_edit',array('op'=>'card_edit','cid'=>$card['id']))}">
+                    <button name="addcard" type="button" class="editcard" style="margin-top:{if $card['model']=='4'}250px{else}60px{/if};">编辑名片</button>
+	            </a>
+				{if $cardset['advertisementimg']!=null}
+			        <a href="{php echo $cardset['advertisementurl']}">
+			            <img src="{php echo tomedia($cardset['advertisementimg'])}" class="advertisementimg" alt="" />
+				    </a>
+			    {/if}
+			</div>
+			<div class="firstmain">
+                <div class="box">
+                    <div class="head_prize">
+                        <div class="prize_content">
+					        {if $card['pic']!=null}
+					        <div class="cardbox">
+				     	        <img src="{php echo $card['pic']}" class="cardimg" alt="" />
+			    	        </div>
+						    <div style="padding-bottom:5px;text-align:center;">长按分享图片</div>
+						    {/if}
+                        </div>
+                    </div>
+		        </div>
+			</div>
+		{else}
+		    <div class="backgroundmain">
+			    <img src="../addons/card_jpg/template/image/bgimage.png" style="width:100%;" alt="" />
+				<a href="{php echo $this->createMobileUrl('card_edit',array('op'=>'card_edit'))}">
+                    <button name="addcard" type="button" class="addcard">添加名片</button>
+	            </a>
+				{if $cardset['advertisementimg']!=null}
+			        <a href="{php echo $cardset['advertisementurl']}">
+			            <img src="{php echo tomedia($cardset['advertisementimg'])}" class="advertisementimg" alt="" />
+			    	</a>
+			    {/if}
+			</div>
+			<div class="firstmain">
+                <div class="box">
+                    <div class="head_prize">
+                        <div class="prize_content">
+					        <div class="cardbox">
+				     	        <img src="../addons/card_jpg/data/model/model1.png" class="cardimg" alt="" />
+			    	        </div>
+						    <div style="padding-bottom:5px;text-align:center;">点击下方按钮添加名片</div>
+                        </div>
+                    </div>
+		        </div>
+			</div>
+		{/if}
+	{/if}
+</body>
+</html>
+{php echo register_jssdk(false);}
+<script type="text/javascript">
+    var title = "{$cardset['sharetitle']}";
+	var desc = "{$cardset['sharedesc']}";
+	var imgurl = "{$shareimg}";
+	var linkurl = "{$linkurl}";
+    wx.ready(function () {
+		sharedata = {
+			title: title,
+			desc: desc,
+			link: linkurl,
+			imgUrl: imgurl,
+			success: function(){
+
+			},
+			cancel: function(){
+
+			}
+		};
+		wx.onMenuShareAppMessage(sharedata);
+		wx.onMenuShareTimeline(sharedata);
+	});
+
+	wx.showOptionMenu();
+</script>

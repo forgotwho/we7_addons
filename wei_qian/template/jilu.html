@@ -1,0 +1,104 @@
+{template 'common/header'}
+
+
+
+  
+  
+
+  
+  
+  
+  
+  <form action="#" method="post" id="form1" class="ng-pristine ng-valid">
+	<div class="panel panel-default">
+	<div class="panel-body table-responsive">
+		<table class="table table-hover" style="width:100%;z-index:-10;" cellspacing="0" cellpadding="0">
+			<thead class="navbar-inner">
+				<tr>
+
+					<th style="width:50px;overflow:hidden;">ID</th>
+					
+					
+					
+					<th style="width:340px;overflow:hidden;">openid</th>
+					
+					<th style="width:180px;overflow:hidden;">时间</th>
+					<th style="width:100px;overflow:hidden;">审核信息</th>
+				
+			
+					<th style="width:100px;" class="text-right">操作</th>
+				</tr>
+			</thead>
+			<tbody>
+			{loop $list $i $item}
+				<tr>
+					
+                    	<td class="text-left vertical-middle">{$item['id']}</td>				 
+					
+					
+					
+					
+					<td class="text-left vertical-middle">
+					
+					<p><span class="label label-success">微信名:{$item['dwnick']}</span></p>
+						<p><span class="label label-default">OPENID:{$item['dopenid']}</span></p>
+						<!-- <p><span>借用openid:{$item['jopenid']}</span></p> -->
+					</td>
+					
+					
+					<td  class="text-left vertical-middle">
+				
+					<?php echo date('Y-m-d H:i:s', $item['dtime']);?>
+					</td>
+					<td class="text-left vertical-middle">
+					
+						{if $item['dissuccess'] == 1}
+						<p><span class="label label-success">提现成功</span></p>
+						<p><span class="label label-success">金额:{$item['dtotal_amount']}元</span></p>
+						{elseif $item['dissuccess'] == 2}
+						<p><span class="label label-warning">提现失败</span></p>
+						<p><span class="label label-warning">金额:{$item['dtotal_amount']}元</span></p>
+						{else}
+						<p><span class="label label-warning">特殊</span></p>
+						<p><span class="label label-warning">金额:{$item['dtotal_amount']}元</span></p>
+						{/if}
+						<p style="width:200px;overflow:hidden"><span class="label label-success">{$item['dresult']}</span></p>
+					
+					</td>
+
+					<td  class="text-left vertical-middle" style="overflow:visible;">
+					
+						<a href="{php echo $this->createWebUrl('Jilu', array('id' => $item['id'], 'op' => 'del'))}" class="btn btn-default btn-sm">删除</a>
+					</td>
+				</tr> {/loop}
+				
+							</tbody>
+		</table>
+		<table class="table table-hover">
+			<tbody><tr>
+				<td width="30">
+					
+				</td>
+				<td class="text-left">
+			
+				
+				
+					</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<span class="help-block">提现记录: 提现记录</span>
+		
+				</td>
+			</tr>
+		</tbody></table>
+	</div>
+	</div>
+	<div class="footactions" style="padding-left:10px">
+		<div class="pages" style="text-align:right;">{$pager}</div>
+			</div></form>
+  
+
+  
+  
+{template 'common/footer'}

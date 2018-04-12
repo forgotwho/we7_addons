@@ -1,0 +1,263 @@
+{template 'common/header'}
+
+<link rel="stylesheet" href="../addons/card_jpg/template/css/style.css">
+<ul class="nav nav-tabs">
+    <li {if $op == 'display'}class="active"{/if}><a href="{php echo $this->createWebUrl('active', array('op' => 'display'))}">用户管理</a></li>
+    <li {if $op == 'post'}class="active"{/if}><a href="{php echo $this->createWebUrl('active', array('op' => 'post','id'=>$_GPC['id']))}">{if $_GPC['id']}编辑用户{else}新增用户{/if}</a></li>
+	{if $op == 'card_post'}<li class="active"><a href="{php echo $this->createWebUrl('active', array('op' => 'card_post','id'=>$_GPC['id']))}">编辑名片</a></li>{/if}
+	<li><a href="{php echo $this->createWebUrl('active', array('op' => 'output'))}"> 导出 </a></li>
+</ul>
+{if $op=='post'}
+<div class="main">
+    <form action="" method="post" class="form-horizontal form" enctype="multipart/form-data" id="form1">
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active panel panel-default" id="basic">
+                <div class="panel-heading">
+                    {if !$id}添加用户{else}编辑用户{/if}
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label class="col-xs-12 col-sm-3 col-md-2 control-label"><span style="color:red">*</span>名片昵称</label>
+                        <div class="col-sm-9 col-xs-12">
+                            <input type="text" name="nickname" class="form-control" value="{$card['nickname']}" />
+                        </div>
+                    </div>
+					<div class="form-group">
+                        <label class="col-xs-12 col-sm-3 col-md-2 control-label">真实姓名</label>
+                        <div class="col-sm-9 col-xs-12">
+                            <input type="text" name="realname" class="form-control" value="{$card['realname']}" />
+                        </div>
+                    </div>
+					<div class="form-group">
+                        <label class="col-xs-12 col-sm-3 col-md-2 control-label">用户电话</label>
+                        <div class="col-sm-9 col-xs-12">
+                            <input type="text" name="phone" class="form-control" value="{$card['phone']}" />
+                        </div>
+                    </div>
+					<div class="form-group" >
+				    	<label class="col-md-2 control-label">性别</label>
+			    		<div class="col-md-9">
+				    		<label class="radio-inline">
+							    <input type="radio" name="sex" value="1" {if $card['sex'] == '1'} checked="checked" {/if} />男
+					    	</label>
+						    <label class="radio-inline">
+							    <input type="radio" name="sex" value="0" {if $card['sex'] == '0'} checked="checked" {/if} />女
+						    </label>
+			    		</div>
+				    </div>
+                    <div class="form-group">
+                        <label class="col-xs-12 col-sm-3 col-md-2 control-label"><span style="color:red">*</span>用户头像</label>
+                        <div class="col-sm-9 col-xs-12">
+                            {php echo tpl_form_field_image('headimgurl', $card['headimgurl']);}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group col-sm-12">
+                <input type="submit" name="submit" value="提交" class="btn btn-primary col-lg-1" />
+                <input type="hidden" name="token" value="{$_W['token']}" />
+            </div>
+        </div>
+    </form>
+</div>
+{elseif $op=="card_post"}
+<div class="main">
+    <form action="" method="post" class="form-horizontal form" enctype="multipart/form-data" id="form1">
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active panel panel-default" id="basic">
+                <div class="panel-heading">
+                    {if !$id}添加名片{else}编辑名片{/if}
+                </div>
+                <div class="panel-body">
+				<div class="form-group">
+                        <label class="col-xs-12 col-sm-3 col-md-2 control-label">真实姓名</label>
+                        <div class="col-sm-9 col-xs-12">
+                            <input type="text" name="realname" class="form-control" value="{$card['realname']}" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-xs-12 col-sm-3 col-md-2 control-label">用户昵称</label>
+                        <div class="col-sm-9 col-xs-12">
+                            <input type="text" name="cardname" class="form-control" value="{$card['cardname']}" />
+                        </div>
+                    </div>
+					<div class="form-group">
+                        <label class="col-xs-12 col-sm-3 col-md-2 control-label">公司名称</label>
+                        <div class="col-sm-9 col-xs-12">
+                            <input type="text" name="company" class="form-control" value="{$card['company']}" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-xs-12 col-sm-3 col-md-2 control-label">公司职位</label>
+                        <div class="col-sm-9 col-xs-12">
+                            <input type="text" name="position" class="form-control" value="{$card['position']}" />
+                        </div>
+                    </div>
+					<div class="form-group">
+                        <label class="col-xs-12 col-sm-3 col-md-2 control-label">公司电话</label>
+                        <div class="col-sm-9 col-xs-12">
+                            <input type="text" name="tel" class="form-control" value="{$card['tel']}" />
+                        </div>
+                    </div>
+					<div class="form-group">
+                        <label class="col-xs-12 col-sm-3 col-md-2 control-label">手机号码</label>
+                        <div class="col-sm-9 col-xs-12">
+                            <input type="text" name="mobile" class="form-control" value="{$card['mobile']}" />
+                        </div>
+                    </div>
+					<div class="form-group">
+                        <label class="col-xs-12 col-sm-3 col-md-2 control-label">微信号码</label>
+                        <div class="col-sm-9 col-xs-12">
+                            <input type="text" name="wechat" class="form-control" value="{$card['wechat']}" />
+                        </div>
+                    </div>
+					<div class="form-group">
+                        <label class="col-xs-12 col-sm-3 col-md-2 control-label">公司地址</label>
+                        <div class="col-sm-9 col-xs-12">
+						    <input type="text" name="address" class="form-control" value="{$card['address']}" />
+                        </div>
+                    </div>
+					<div class="form-group">
+                        <label class="col-xs-12 col-sm-3 col-md-2 control-label">电子邮件</label>
+                        <div class="col-sm-9 col-xs-12">
+                            <input type="text" name="email" class="form-control" value="{$card['email']}" />
+                        </div>
+                    </div>
+					<div class="form-group">
+					    <label class="col-xs-12 col-sm-3 col-md-2 control-label">名片模板</label>
+                        <div class="col-sm-9 col-xs-12">
+                            <label class="radio-inline">
+							    <input type="radio" name="model" value="1" {if $card['model'] == '1'} checked="checked" {/if} /><img src="../addons/card_jpg/data/model/model1.png" width="130" height="105" alt="" style="padding:4px;border:1px solid #CCCCCC;" />
+					    	</label>
+						    <label class="radio-inline">
+							    <input type="radio" name="model" value="2" {if $card['model'] == '2'} checked="checked" {/if} /><img src="../addons/card_jpg/data/model/model2.png" width="130" height="105" alt="" style="padding:4px;border:1px solid #CCCCCC;" />
+						    </label>
+							<label class="radio-inline">
+							    <input type="radio" name="model" value="3" {if $card['model'] == '3'} checked="checked" {/if} /><img src="../addons/card_jpg/data/model/model3.png" width="130" height="105" alt="" style="padding:4px;border:1px solid #CCCCCC;" />
+						    </label>
+							<label class="radio-inline">
+							    <input type="radio" name="model" value="4" {if $card['model'] == '4'} checked="checked" {/if} /><img src="../addons/card_jpg/data/model/model4.png" width="95" height="105" alt="" style="padding:4px;border:1px solid #CCCCCC;" />
+						    </label>
+                        </div>
+                    </div>
+					<div class="form-group" style="display:none;">
+					    <label class="col-xs-12 col-sm-3 col-md-2 control-label">名片字体</label>
+                        <div class="col-sm-9 col-xs-12">
+                            <select name="font" class="form-control">
+							    <option value="sjt" {if $card['font']=='sjt'}selected="selected"{/if}>宋简体</option>
+						    </select>
+                        </div>
+                    </div>
+					<div class="form-group">
+					    <label class="col-xs-12 col-sm-3 col-md-2 control-label">字体颜色</label>
+                        <div class="col-sm-9 col-xs-12">
+                            <select name="fontcolor" class="form-control">
+						    	<option value="black" {if $card['fontcolor']=='black'}selected="selected"{/if}>黑色</option>
+							    <option value="white" {if $card['fontcolor']=='white'}selected="selected"{/if}>白色</option>
+							    <option value="silver" {if $card['fontcolor']=='silver'}selected="selected"{/if}>银色</option>
+								<option value="darkred" {if $card['fontcolor']=='darkred'}selected="selected"{/if}>深红色</option>
+								<option value="blue" {if $card['fontcolor']=='blue'}selected="selected"{/if}>蓝色</option>
+								<option value="green" {if $card['fontcolor']=='green'}selected="selected"{/if}>绿色</option>
+								<option value="purple" {if $card['fontcolor']=='purple'}selected="selected"{/if}>紫色</option>
+								<option value="gold" {if $card['fontcolor']=='gold'}selected="selected"{/if}>金色</option>
+								<option value="cyan" {if $card['fontcolor']=='cyan'}selected="selected"{/if}>青色</option>
+						    </select>
+							<span class="help-block">默认黑色</span>
+                        </div>
+                    </div>
+					<div class="form-group">
+					    <label class="col-xs-12 col-sm-3 col-md-2 control-label">背景色</label>
+                        <div class="col-sm-9 col-xs-12">
+                            <select name="colortype" class="form-control">
+							    <option value="white" {if $card['colortype']=='white'}selected="selected"{/if}>白色</option>
+							    <option value="silver" {if $card['colortype']=='silver'}selected="selected"{/if}>银色</option>
+								<option value="black" {if $card['colortype']=='black'}selected="selected"{/if}>黑色</option>
+								<option value="darkred" {if $card['colortype']=='darkred'}selected="selected"{/if}>深红色</option>
+								<option value="blue" {if $card['colortype']=='blue'}selected="selected"{/if}>蓝色</option>
+						    </select>
+							<span class="help-block">默认白色</span>
+                        </div>
+                    </div>
+					<div class="form-group">
+                        <label class="col-xs-12 col-sm-3 col-md-2 control-label">背景图</label>
+                        <div class="col-sm-9 col-xs-12">
+                            {php echo tpl_form_field_image('baseimage', $card['baseimage']);}
+							<span class="help-block" >建议横形尺寸720*440,竖形尺寸400*720</span>
+                        </div>
+                    </div>
+					<div class="form-group">
+                        <label class="col-xs-12 col-sm-3 col-md-2 control-label">logo</label>
+                        <div class="col-sm-9 col-xs-12">
+                            {php echo tpl_form_field_image('image', $card['image']);}
+							<span class="help-block" >建议尺寸180*180</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group col-sm-12">
+                <input type="submit" name="submit" value="提交" class="btn btn-primary col-lg-1" />
+                <input type="hidden" name="token" value="{$_W['token']}" />
+            </div>
+        </div>
+    </form>
+</div>
+{elseif $op=="display"}
+<div class="panel panel-default">
+    <div class="table-responsive panel-body">
+        <form action="" method="post" class="form-horizontal form" enctype="multipart/form-data">
+            <table class="table table-hover table-bordered">
+                <thead class="navbar-inner">
+                <tr>
+                    <th style="width:10%;">编号ID</th>
+                    <th style="width:15%;">昵称</th>
+                    <th style="width:10%;">名片</th>
+                    <th style="width:35%;text-align: center;" >操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                {loop $list $k $item}
+                <tr>
+                    <td>{$item['id']}</td>
+                    <td>{$item['nickname']}</td>
+                    <td><a href="javascript:;" class="btn btn-default success " data-toggle="modal" data-target="#myModal{$k}">查看名片</a></td>
+                    <td style="max-width:70px;text-align: center;">
+					    <a class="btn btn-default btn-sm" href="{php echo $this->createWebUrl('active', array('id' => $item['id'],'op' => 'card_post'))}" title="名片编辑">名片编辑</a>
+						
+						<a class="btn btn-default btn-sm" href="{php echo $this->createWebUrl('card_creatimg', array('id' => $item['id']))}" title="名片编辑">生成名片</a>
+					    
+                        <a class="btn btn-default btn-sm" href="{php echo $this->createWebUrl('active', array('id' => $item['id'],'op' => 'post'))}" title="修改">修改</a>
+
+                        <a class="btn btn-default btn-sm" onclick="return confirm('确认删除吗？');return false;"
+                           href="{php echo $this->createWebUrl('active', array('id' => $item['id'], 'op' => 'delete'))}" title="删除">删除</a>
+                    </td>
+                </tr>
+
+                <div class="modal fade" id="myModal{$k}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title">名片</h4>
+                            </div>
+                            <div class="modal-body">
+							    <div style="text-align:center;">
+								    <img src="{php echo $item['pic']}" alt="" style="width:100%;border:1px solid #CCCCCC;" />
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+                {/loop}
+
+                </tbody>
+            </table>
+            {$pagination}
+        </form>
+    </div>
+</div>
+{$pager}
+{/if}
+{template 'common/footer'}

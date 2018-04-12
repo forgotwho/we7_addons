@@ -1,0 +1,546 @@
+a:3:{s:4:"time";i:1509524951;s:6:"expire";i:300;s:5:"value";s:33852:"<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<link rel="stylesheet" href="http://cms.91fyt.com/cms/web/css/index.css" type="text/css">
+		<script src="http://cms.91fyt.com/cms/web/js/jquery-1.9.1.js"></script>
+		<script src="http://cms.91fyt.com/cms/web/js/index.js"></script>
+		<title>好京客CMS导购系统-全部优惠券</title>
+	</head>
+
+	<body>
+		<div class="fo">
+			<div class="fo_1">
+				<div class="fo_1_1">
+					<span class="left">好京客,导购系统。好京客,导购系统</span>
+					<span class="right">
+            <span class="span_1">
+              <a href="javascript:void(0)" onclick="SetHome(this,window.location)">设为首页</a></span>
+					<span class="span_1">
+              <a href="javascript:void(0)" onclick="shoucang(document.title,window.location)">加入收藏</a></span>
+					</span>
+				</div>
+			</div>
+			<div class="fo_2">
+				<div class="fo_2_1">
+					<span class="f_shop">
+            <a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=index">
+              <img class="img_1" style="width: 158px;height: 55px;" src="http://cms.91fyt.com/cms/web/images/logo.png"></a>
+          </span>
+					<div class="search-group">
+						<form id="" name="" action="" data-pjax="true" class="searchf" style="position:relative">
+						    <input type="hidden" name="i" value="56"><input type="hidden" name="m" value="nets_haojkcms"><input type="hidden" name="do" value="index"><input type="hidden" name="c" value="entry">
+							<input type="hidden" name="ah" value="total">
+							<input class="input_1 kwd index-search-input" type="text" placeholder="请输入您要搜索关键词" name="kw" value="女装">
+							<input class="input_2" type="submit" id="" value="搜索">
+						</form>
+					</div>
+					<div class="f_update">
+						<img class="img a" src="http://cms.91fyt.com/cms/web/images/jdz_2.jpg">
+						<img class="a" src="http://cms.91fyt.com/cms/web/images/jdz_3.jpg">
+						<img class="a" src="http://cms.91fyt.com/cms/web/images/jdz_4.jpg"></div>
+				</div>
+			</div>
+			<div class="fo_3">
+				<ul>
+					<li class="li">
+						<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=index" class="f_fixed">
+							<img src="http://cms.91fyt.com/cms/web/images/f_clasify.png" alt="全部商品分类">全部商品分类</a>
+					</li>
+					<li>
+						<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=sift" class="f_select f_ju">精选好货</a>
+					</li>
+					<li style="position:relative" >
+						<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=real" >实时上新</a>
+						<span></span>
+					</li>
+					<li>
+						<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=total"  class="f_select ">全部优惠券</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="img_outer">
+			<img src="http://cms.91fyt.com/cms/web/images/total-banner.jpg"></div>
+		<div class="content content_new">
+			<div class="content_2">
+				<div class="yhq">
+					<img src="http://cms.91fyt.com/cms/web/images/f_coupont.png">
+				</div>
+				<div class="shai_">
+                    
+					<ul>
+						<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=total&kw=女装&sort=0&cname=">
+							<li class="shai_1 shai_active">默认</li>
+						</a>
+						<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=total&kw=女装&sort=1&cname=">
+							<li class="yes">券后价最低</li>
+						</a>
+						<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=total&kw=女装&sort=2&cname=">
+							<li class="yes">优惠最多</li>
+						</a>
+					</ul>
+				</div>
+
+				<div class="classfiy">
+					<span>商品分类 :</span>
+					<ul>
+						<li class="classfiy_active">
+							<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=total&kw=女装&sort=&cname=">全部</a>
+						</li><li class="yes">
+						<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=total&kw=女装&sort=&cname=食品保健">食品保健</a>
+					</li><li class="yes">
+						<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=total&kw=女装&sort=&cname=鞋品箱包">鞋品箱包</a>
+					</li><li class="yes">
+						<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=total&kw=女装&sort=&cname=运动户外">运动户外</a>
+					</li><li class="yes">
+						<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=total&kw=女装&sort=&cname=美妆个护">美妆个护</a>
+					</li><li class="yes">
+						<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=total&kw=女装&sort=&cname=男装">男装</a>
+					</li><li class="yes">
+						<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=total&kw=女装&sort=&cname=母婴玩具">母婴玩具</a>
+					</li><li class="yes">
+						<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=total&kw=女装&sort=&cname=文体车品">文体车品</a>
+					</li><li class="yes">
+						<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=total&kw=女装&sort=&cname=数码家电">数码家电</a>
+					</li><li class="yes">
+						<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=total&kw=女装&sort=&cname=居家生活">居家生活</a>
+					</li><li class="yes">
+						<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=total&kw=女装&sort=&cname=女装">女装</a>
+					</li><li class="yes">
+						<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=total&kw=女装&sort=&cname=内衣配饰">内衣配饰</a>
+					</li><li class="classfiy_active">
+						<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=total&kw=女装&sort=&cname="></a>
+					</li>
+					</ul>
+				</div>
+				<div class="sp">
+					<div class="sp_out">
+					
+							<div class="sp_1">
+								<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4676860" target="_blank" class="main_icon_out">
+									<img class="main_icon" src="http://tkqupdate.oss-cn-shanghai.aliyuncs.com/6b4808fb15eb4730a8b00ccd9dd778bc.jpg?imageMogr2/strip/format.jpg"></a>
+								<br>
+								<img class="tm_icon" src="http://cms.91fyt.com/cms/web/images/jd.png">
+								<span class="nr">
+                  <a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4676860" target="_blank">朗臣中老年女装针织衫毛衣保暖</a></span>
+								<img class="post_icon" src="http://cms.91fyt.com/cms/web/images/post.png">
+								<div class="price_new">
+									<span class="price_new_a">￥88.00</span>
+									<span class="price_new_b">(券后)</span>
+									<span class="price_new_c">￥138.00</span>
+									<div style="float: right;margin-top: 2px;margin-right: 5px;"></div>
+									<span class="price_new_d" style="display: none">剩余
+                    <span class="price_new_b">999</span>件</span>
+								</div>
+								<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4676860"  class="f_coupont">领券
+									<span>50元</span></a>
+							</div>
+							<div class="sp_1">
+								<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4687868" target="_blank" class="main_icon_out">
+									<img class="main_icon" src="http://img14.360buyimg.com/n1/jfs/t2302/192/403340908/252051/ad9935af/56079f5bNb6a9e08c.jpg"></a>
+								<br>
+								<img class="tm_icon" src="http://cms.91fyt.com/cms/web/images/jd.png">
+								<span class="nr">
+                  <a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4687868" target="_blank">【秋冬1件8折】nadine秋冬加绒打底衫长袖大码女装娃娃领印花保暖上衣蕾丝衫 黑白豹纹 S</a></span>
+								<img class="post_icon" src="http://cms.91fyt.com/cms/web/images/post.png">
+								<div class="price_new">
+									<span class="price_new_a">￥74.00</span>
+									<span class="price_new_b">(券后)</span>
+									<span class="price_new_c">￥79.00</span>
+									<div style="float: right;margin-top: 2px;margin-right: 5px;"></div>
+									<span class="price_new_d" style="display: none">剩余
+                    <span class="price_new_b">999</span>件</span>
+								</div>
+								<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4687868"  class="f_coupont">领券
+									<span>5元</span></a>
+							</div>
+							<div class="sp_1">
+								<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4687870" target="_blank" class="main_icon_out">
+									<img class="main_icon" src="http://img14.360buyimg.com/n1/jfs/t9049/145/1857613432/198534/f408504d/59c0c553N8aaa5d93.jpg"></a>
+								<br>
+								<img class="tm_icon" src="http://cms.91fyt.com/cms/web/images/jd.png">
+								<span class="nr">
+                  <a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4687870" target="_blank">【秋冬1件8折】Nadine加绒加厚打底长袖蕾丝连衣裙韩版修身显瘦内搭大码女装A字打底裙 黑色 S</a></span>
+								<img class="post_icon" src="http://cms.91fyt.com/cms/web/images/post.png">
+								<div class="price_new">
+									<span class="price_new_a">￥184.00</span>
+									<span class="price_new_b">(券后)</span>
+									<span class="price_new_c">￥189.00</span>
+									<div style="float: right;margin-top: 2px;margin-right: 5px;"></div>
+									<span class="price_new_d" style="display: none">剩余
+                    <span class="price_new_b">999</span>件</span>
+								</div>
+								<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4687870"  class="f_coupont">领券
+									<span>5元</span></a>
+							</div>
+							<div class="sp_1">
+								<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4687876" target="_blank" class="main_icon_out">
+									<img class="main_icon" src="http://img14.360buyimg.com/n1/jfs/t679/365/1278792571/215773/74eae275/54c35769N429b025b.jpg"></a>
+								<br>
+								<img class="tm_icon" src="http://cms.91fyt.com/cms/web/images/jd.png">
+								<span class="nr">
+                  <a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4687876" target="_blank">【1件7折】NADINE秋装印花长袖雪纺连衣裙 显瘦大码女装修身打底裙a字裙 蓝色水晶花 S</a></span>
+								<img class="post_icon" src="http://cms.91fyt.com/cms/web/images/post.png">
+								<div class="price_new">
+									<span class="price_new_a">￥104.00</span>
+									<span class="price_new_b">(券后)</span>
+									<span class="price_new_c">￥109.00</span>
+									<div style="float: right;margin-top: 2px;margin-right: 5px;"></div>
+									<span class="price_new_d" style="display: none">剩余
+                    <span class="price_new_b">999</span>件</span>
+								</div>
+								<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4687876"  class="f_coupont">领券
+									<span>5元</span></a>
+							</div>
+							<div class="sp_1">
+								<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4687890" target="_blank" class="main_icon_out">
+									<img class="main_icon" src="http://img14.360buyimg.com/n1/jfs/t2269/42/394107960/227732/6bf579a3/560763fcN5d8ebb76.jpg"></a>
+								<br>
+								<img class="tm_icon" src="http://cms.91fyt.com/cms/web/images/jd.png">
+								<span class="nr">
+                  <a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4687890" target="_blank">【秋冬1件8折】NADINE加绒雪纺衫保暖加厚上衣大码女装纯色套头长袖衬衫 姜黄色 S</a></span>
+								<img class="post_icon" src="http://cms.91fyt.com/cms/web/images/post.png">
+								<div class="price_new">
+									<span class="price_new_a">￥94.00</span>
+									<span class="price_new_b">(券后)</span>
+									<span class="price_new_c">￥99.00</span>
+									<div style="float: right;margin-top: 2px;margin-right: 5px;"></div>
+									<span class="price_new_d" style="display: none">剩余
+                    <span class="price_new_b">999</span>件</span>
+								</div>
+								<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4687890"  class="f_coupont">领券
+									<span>5元</span></a>
+							</div>
+							<div class="sp_1">
+								<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4687901" target="_blank" class="main_icon_out">
+									<img class="main_icon" src="http://img14.360buyimg.com/n1/jfs/t5782/30/911360783/191642/2727f4ef/59229a19Nd195c289.jpg"></a>
+								<br>
+								<img class="tm_icon" src="http://cms.91fyt.com/cms/web/images/jd.png">
+								<span class="nr">
+                  <a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4687901" target="_blank">梦可2017秋季新款女装休闲文艺棉麻中长裙绿色A字半身裙子 MK9650系扣深灰79 松紧2.0-2.2尺M</a></span>
+								<img class="post_icon" src="http://cms.91fyt.com/cms/web/images/post.png">
+								<div class="price_new">
+									<span class="price_new_a">￥105.40</span>
+									<span class="price_new_b">(券后)</span>
+									<span class="price_new_c">￥110.40</span>
+									<div style="float: right;margin-top: 2px;margin-right: 5px;"></div>
+									<span class="price_new_d" style="display: none">剩余
+                    <span class="price_new_b">999</span>件</span>
+								</div>
+								<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4687901"  class="f_coupont">领券
+									<span>5元</span></a>
+							</div>
+							<div class="sp_1">
+								<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4687905" target="_blank" class="main_icon_out">
+									<img class="main_icon" src="http://img14.360buyimg.com/n1/jfs/t2797/281/2421499136/140712/d0cefdfa/5763abbbNe3943b1a.jpg"></a>
+								<br>
+								<img class="tm_icon" src="http://cms.91fyt.com/cms/web/images/jd.png">
+								<span class="nr">
+                  <a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4687905" target="_blank">梦可2017夏季新款女装高腰雪纺中长款黑色纱A字半身裙子 MK9659-白色雪纺 09(腰2.0尺) 长61</a></span>
+								<img class="post_icon" src="http://cms.91fyt.com/cms/web/images/post.png">
+								<div class="price_new">
+									<span class="price_new_a">￥211.00</span>
+									<span class="price_new_b">(券后)</span>
+									<span class="price_new_c">￥216.00</span>
+									<div style="float: right;margin-top: 2px;margin-right: 5px;"></div>
+									<span class="price_new_d" style="display: none">剩余
+                    <span class="price_new_b">999</span>件</span>
+								</div>
+								<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4687905"  class="f_coupont">领券
+									<span>5元</span></a>
+							</div>
+							<div class="sp_1">
+								<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4687907" target="_blank" class="main_icon_out">
+									<img class="main_icon" src="http://img.jingtuitui.com/7311f201710261608184344.jpg?imageMogr2/strip/format.jpg"></a>
+								<br>
+								<img class="tm_icon" src="http://cms.91fyt.com/cms/web/images/jd.png">
+								<span class="nr">
+                  <a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4687907" target="_blank">朗臣中老年女装冬装年轻妈妈装棉服</a></span>
+								<img class="post_icon" src="http://cms.91fyt.com/cms/web/images/post.png">
+								<div class="price_new">
+									<span class="price_new_a">￥98.00</span>
+									<span class="price_new_b">(券后)</span>
+									<span class="price_new_c">￥148.00</span>
+									<div style="float: right;margin-top: 2px;margin-right: 5px;"></div>
+									<span class="price_new_d" style="display: none">剩余
+                    <span class="price_new_b">999</span>件</span>
+								</div>
+								<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4687907"  class="f_coupont">领券
+									<span>50元</span></a>
+							</div>
+							<div class="sp_1">
+								<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4688074" target="_blank" class="main_icon_out">
+									<img class="main_icon" src="http://img14.360buyimg.com/n1/g13/M09/0D/0D/rBEhVFJC11kIAAAAAAHHleYOMmcAADg6wPh_zoAAcet788.jpg"></a>
+								<br>
+								<img class="tm_icon" src="http://cms.91fyt.com/cms/web/images/jd.png">
+								<span class="nr">
+                  <a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4688074" target="_blank">【清仓1件5折】NADINE秋装短外套女大码复古洗旧百搭帅气牛仔上衣小夹克女装 黑色 S</a></span>
+								<img class="post_icon" src="http://cms.91fyt.com/cms/web/images/post.png">
+								<div class="price_new">
+									<span class="price_new_a">￥114.00</span>
+									<span class="price_new_b">(券后)</span>
+									<span class="price_new_c">￥119.00</span>
+									<div style="float: right;margin-top: 2px;margin-right: 5px;"></div>
+									<span class="price_new_d" style="display: none">剩余
+                    <span class="price_new_b">999</span>件</span>
+								</div>
+								<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4688074"  class="f_coupont">领券
+									<span>5元</span></a>
+							</div>
+							<div class="sp_1">
+								<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4688190" target="_blank" class="main_icon_out">
+									<img class="main_icon" src="http://img14.360buyimg.com/n1/jfs/t7036/77/1975181513/372753/18396ff2/5987d328N51a6e704.jpg"></a>
+								<br>
+								<img class="tm_icon" src="http://cms.91fyt.com/cms/web/images/jd.png">
+								<span class="nr">
+                  <a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4688190" target="_blank">艾路丝婷2017秋装新款女装刺绣连帽修身休闲开衫外套女Y0943 深蓝色 S</a></span>
+								<img class="post_icon" src="http://cms.91fyt.com/cms/web/images/post.png">
+								<div class="price_new">
+									<span class="price_new_a">￥89.00</span>
+									<span class="price_new_b">(券后)</span>
+									<span class="price_new_c">￥109.00</span>
+									<div style="float: right;margin-top: 2px;margin-right: 5px;"></div>
+									<span class="price_new_d" style="display: none">剩余
+                    <span class="price_new_b">999</span>件</span>
+								</div>
+								<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4688190"  class="f_coupont">领券
+									<span>20元</span></a>
+							</div>
+							<div class="sp_1">
+								<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4688211" target="_blank" class="main_icon_out">
+									<img class="main_icon" src="http://img14.360buyimg.com/n1/jfs/t5005/6/507964635/147310/5fa02632/58e34512N16ec623a.jpg"></a>
+								<br>
+								<img class="tm_icon" src="http://cms.91fyt.com/cms/web/images/jd.png">
+								<span class="nr">
+                  <a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4688211" target="_blank">【清仓1件5折】NADINE2017连衣裙夏短袖职业装OL连衣裙假两件修身显瘦包臀裙女装 黑色 XS</a></span>
+								<img class="post_icon" src="http://cms.91fyt.com/cms/web/images/post.png">
+								<div class="price_new">
+									<span class="price_new_a">￥94.00</span>
+									<span class="price_new_b">(券后)</span>
+									<span class="price_new_c">￥99.00</span>
+									<div style="float: right;margin-top: 2px;margin-right: 5px;"></div>
+									<span class="price_new_d" style="display: none">剩余
+                    <span class="price_new_b">999</span>件</span>
+								</div>
+								<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4688211"  class="f_coupont">领券
+									<span>5元</span></a>
+							</div>
+							<div class="sp_1">
+								<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4688342" target="_blank" class="main_icon_out">
+									<img class="main_icon" src="http://img14.360buyimg.com/n1/jfs/t5968/313/3194448951/373348/9108ec42/594c683aN79cbc3c3.jpg"></a>
+								<br>
+								<img class="tm_icon" src="http://cms.91fyt.com/cms/web/images/jd.png">
+								<span class="nr">
+                  <a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4688342" target="_blank">【1件7折】nadine短袖衬衫式连衣裙2017夏大码女装前短后长A字裙人棉印花 小鸟印花 L</a></span>
+								<img class="post_icon" src="http://cms.91fyt.com/cms/web/images/post.png">
+								<div class="price_new">
+									<span class="price_new_a">￥94.00</span>
+									<span class="price_new_b">(券后)</span>
+									<span class="price_new_c">￥99.00</span>
+									<div style="float: right;margin-top: 2px;margin-right: 5px;"></div>
+									<span class="price_new_d" style="display: none">剩余
+                    <span class="price_new_b">999</span>件</span>
+								</div>
+								<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4688342"  class="f_coupont">领券
+									<span>5元</span></a>
+							</div>
+							<div class="sp_1">
+								<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4688692" target="_blank" class="main_icon_out">
+									<img class="main_icon" src="http://img14.360buyimg.com/n1/jfs/t7684/177/2841167264/236608/f2ed2afb/59b4b991N56ce3f02.jpg"></a>
+								<br>
+								<img class="tm_icon" src="http://cms.91fyt.com/cms/web/images/jd.png">
+								<span class="nr">
+                  <a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4688692" target="_blank">BOOLIJ 2017秋装新款纯棉印花t恤女长袖运动休闲polo衫中青年女装体恤上衣 8029粉色（码数偏小） M（适合80-99斤）</a></span>
+								<img class="post_icon" src="http://cms.91fyt.com/cms/web/images/post.png">
+								<div class="price_new">
+									<span class="price_new_a">￥93.00</span>
+									<span class="price_new_b">(券后)</span>
+									<span class="price_new_c">￥98.00</span>
+									<div style="float: right;margin-top: 2px;margin-right: 5px;"></div>
+									<span class="price_new_d" style="display: none">剩余
+                    <span class="price_new_b">999</span>件</span>
+								</div>
+								<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4688692"  class="f_coupont">领券
+									<span>5元</span></a>
+							</div>
+							<div class="sp_1">
+								<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4690283" target="_blank" class="main_icon_out">
+									<img class="main_icon" src="http://img14.360buyimg.com/imgzone/g5/M02/11/1D/rBEIC0_tStIIAAAAAAGSuL8Ca-AAADgDAGAJAkAAZLQ211.jpg?imageMogr2/strip/format.jpg"></a>
+								<br>
+								<img class="tm_icon" src="http://cms.91fyt.com/cms/web/images/jd.png">
+								<span class="nr">
+                  <a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4690283" target="_blank">迈姿时尚创意饰品真品欧美合成水晶春夏花果电镀白金优雅气质手链百搭女装清仓包邮特价</a></span>
+								<img class="post_icon" src="http://cms.91fyt.com/cms/web/images/post.png">
+								<div class="price_new">
+									<span class="price_new_a">￥99.00</span>
+									<span class="price_new_b">(券后)</span>
+									<span class="price_new_c">￥109.00</span>
+									<div style="float: right;margin-top: 2px;margin-right: 5px;"></div>
+									<span class="price_new_d" style="display: none">剩余
+                    <span class="price_new_b">999</span>件</span>
+								</div>
+								<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4690283"  class="f_coupont">领券
+									<span>10元</span></a>
+							</div>
+							<div class="sp_1">
+								<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4691125" target="_blank" class="main_icon_out">
+									<img class="main_icon" src="http://img14.360buyimg.com/imgzone/jfs/t1378/316/1353397075/51462/2936459e/560a2749N5819451f.jpg?imageMogr2/strip/format.jpg"></a>
+								<br>
+								<img class="tm_icon" src="http://cms.91fyt.com/cms/web/images/jd.png">
+								<span class="nr">
+                  <a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4691125" target="_blank">迈姿时尚梅花钥匙长款多层项链毛衣链珠光宝气百搭秋冬女装红色玫瑰蝴蝶双色滴油珍珠毛衣链</a></span>
+								<img class="post_icon" src="http://cms.91fyt.com/cms/web/images/post.png">
+								<div class="price_new">
+									<span class="price_new_a">￥74.00</span>
+									<span class="price_new_b">(券后)</span>
+									<span class="price_new_c">￥79.00</span>
+									<div style="float: right;margin-top: 2px;margin-right: 5px;"></div>
+									<span class="price_new_d" style="display: none">剩余
+                    <span class="price_new_b">999</span>件</span>
+								</div>
+								<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4691125"  class="f_coupont">领券
+									<span>5元</span></a>
+							</div>
+							<div class="sp_1">
+								<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4693037" target="_blank" class="main_icon_out">
+									<img class="main_icon" src="http://img14.360buyimg.com/imgzone/jfs/t7156/41/2170797072/296546/5797faba/599253e4N66dbf6b7.jpg?imageMogr2/strip/format.jpg"></a>
+								<br>
+								<img class="tm_icon" src="http://cms.91fyt.com/cms/web/images/jd.png">
+								<span class="nr">
+                  <a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4693037" target="_blank">旗舰店大码女装秋装长袖t恤</a></span>
+								<img class="post_icon" src="http://cms.91fyt.com/cms/web/images/post.png">
+								<div class="price_new">
+									<span class="price_new_a">￥79.00</span>
+									<span class="price_new_b">(券后)</span>
+									<span class="price_new_c">￥99.00</span>
+									<div style="float: right;margin-top: 2px;margin-right: 5px;"></div>
+									<span class="price_new_d" style="display: none">剩余
+                    <span class="price_new_b">999</span>件</span>
+								</div>
+								<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4693037"  class="f_coupont">领券
+									<span>20元</span></a>
+							</div>
+							<div class="sp_1">
+								<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4693038" target="_blank" class="main_icon_out">
+									<img class="main_icon" src="http://img14.360buyimg.com/imgzone/jfs/t7429/316/256649040/374136/f7610cf3/599111d6N6b01fcd6.jpg?imageMogr2/strip/format.jpg"></a>
+								<br>
+								<img class="tm_icon" src="http://cms.91fyt.com/cms/web/images/jd.png">
+								<span class="nr">
+                  <a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4693038" target="_blank">官方旗舰店大码女装秋冬弹力打底衫</a></span>
+								<img class="post_icon" src="http://cms.91fyt.com/cms/web/images/post.png">
+								<div class="price_new">
+									<span class="price_new_a">￥79.00</span>
+									<span class="price_new_b">(券后)</span>
+									<span class="price_new_c">￥99.00</span>
+									<div style="float: right;margin-top: 2px;margin-right: 5px;"></div>
+									<span class="price_new_d" style="display: none">剩余
+                    <span class="price_new_b">999</span>件</span>
+								</div>
+								<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4693038"  class="f_coupont">领券
+									<span>20元</span></a>
+							</div>
+							<div class="sp_1">
+								<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4693040" target="_blank" class="main_icon_out">
+									<img class="main_icon" src="http://img14.360buyimg.com/imgzone/jfs/t3544/36/2476902152/303830/55b5c1ed/5854f110Nfa197538.jpg?imageMogr2/strip/format.jpg"></a>
+								<br>
+								<img class="tm_icon" src="http://cms.91fyt.com/cms/web/images/jd.png">
+								<span class="nr">
+                  <a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4693040" target="_blank">旗舰店大码女装秋装长袖打底衫</a></span>
+								<img class="post_icon" src="http://cms.91fyt.com/cms/web/images/post.png">
+								<div class="price_new">
+									<span class="price_new_a">￥59.00</span>
+									<span class="price_new_b">(券后)</span>
+									<span class="price_new_c">￥79.00</span>
+									<div style="float: right;margin-top: 2px;margin-right: 5px;"></div>
+									<span class="price_new_d" style="display: none">剩余
+                    <span class="price_new_b">999</span>件</span>
+								</div>
+								<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4693040"  class="f_coupont">领券
+									<span>20元</span></a>
+							</div>
+							<div class="sp_1">
+								<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4693039" target="_blank" class="main_icon_out">
+									<img class="main_icon" src="http://img14.360buyimg.com/imgzone/jfs/t9484/242/355477030/399171/e4eccc82/59a67b2aNe9072f8a.jpg?imageMogr2/strip/format.jpg"></a>
+								<br>
+								<img class="tm_icon" src="http://cms.91fyt.com/cms/web/images/jd.png">
+								<span class="nr">
+                  <a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4693039" target="_blank">官方旗舰店大码女装秋装小外套</a></span>
+								<img class="post_icon" src="http://cms.91fyt.com/cms/web/images/post.png">
+								<div class="price_new">
+									<span class="price_new_a">￥108.00</span>
+									<span class="price_new_b">(券后)</span>
+									<span class="price_new_c">￥128.00</span>
+									<div style="float: right;margin-top: 2px;margin-right: 5px;"></div>
+									<span class="price_new_d" style="display: none">剩余
+                    <span class="price_new_b">999</span>件</span>
+								</div>
+								<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4693039"  class="f_coupont">领券
+									<span>20元</span></a>
+							</div>
+							<div class="sp_1">
+								<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4693078" target="_blank" class="main_icon_out">
+									<img class="main_icon" src="http://img14.360buyimg.com/imgzone/jfs/t7204/145/1252698052/341162/2844e591/598932cdN05a1abe0.jpg?imageMogr2/strip/format.jpg"></a>
+								<br>
+								<img class="tm_icon" src="http://cms.91fyt.com/cms/web/images/jd.png">
+								<span class="nr">
+                  <a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4693078" target="_blank">旗舰店大码女装秋装长袖t恤</a></span>
+								<img class="post_icon" src="http://cms.91fyt.com/cms/web/images/post.png">
+								<div class="price_new">
+									<span class="price_new_a">￥79.00</span>
+									<span class="price_new_b">(券后)</span>
+									<span class="price_new_c">￥99.00</span>
+									<div style="float: right;margin-top: 2px;margin-right: 5px;"></div>
+									<span class="price_new_d" style="display: none">剩余
+                    <span class="price_new_b">999</span>件</span>
+								</div>
+								<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4693078"  class="f_coupont">领券
+									<span>20元</span></a>
+							</div>
+							<div class="sp_1">
+								<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4693113" target="_blank" class="main_icon_out">
+									<img class="main_icon" src="http://img14.360buyimg.com/imgzone/jfs/t8062/224/1738261575/319888/6f5b2b48/59be89acN80099101.jpg?imageMogr2/strip/format.jpg"></a>
+								<br>
+								<img class="tm_icon" src="http://cms.91fyt.com/cms/web/images/jd.png">
+								<span class="nr">
+                  <a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4693113" target="_blank">2017秋装长袖连衣裙大码女装套装</a></span>
+								<img class="post_icon" src="http://cms.91fyt.com/cms/web/images/post.png">
+								<div class="price_new">
+									<span class="price_new_a">￥79.00</span>
+									<span class="price_new_b">(券后)</span>
+									<span class="price_new_c">￥119.00</span>
+									<div style="float: right;margin-top: 2px;margin-right: 5px;"></div>
+									<span class="price_new_d" style="display: none">剩余
+                    <span class="price_new_b">999</span>件</span>
+								</div>
+								<a href="./index.php?i=56&c=entry&do=index&m=nets_haojkcms&ah=detail&id=4693113"  class="f_coupont">领券
+									<span>40元</span></a>
+							</div>
+					</div>
+				</div>
+				<div class="pages">
+					<div id="page">
+						<ul class="pagination">
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<img src="http://cms.91fyt.com/cms/web/images/word.png">
+			<br>
+			<div>Copyright 版权所有 好京客CMS导购系统
+				<noempty name="">All Rights Reserved.
+				<a href="http://www.miitbeian.gov.cn">苏ICP备14042987号</a>
+				</noempty>
+			</div>
+		</div>
+
+	</body>
+
+</html>";}
