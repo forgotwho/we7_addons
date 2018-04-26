@@ -44,11 +44,11 @@
 
 </div>
 
-
 <div class="sideCont">
     <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin={$contact['qq']}&site=qq&menu=yes"><img src="/addons/{$m}/resource/style2/images/side_img01.png" alt="QQ咨询" title="QQ咨询"></a>
     <div id="goTop"><img src="/addons/{$m}/resource/style2/images/side_img02.png"></div>
 </div>
+
 <!--contain end-->
 <script>
     $(function () {
@@ -63,7 +63,6 @@
         });
 
 
-
         var map=new BMap.Map("map");
         //创建地图中心坐标点
         var point=new BMap.Point({$contact['lng']},{$contact['lat']});
@@ -72,8 +71,8 @@
         var marker = new BMap.Marker(point);        // 创建标注
         map.addOverlay(marker);
 
-
         $(window).scroll(function(){
+
             if ($(this).scrollTop() > 500) {
                 $('#goTop').fadeIn();
             } else {
@@ -85,6 +84,7 @@
             $('html, body').animate({scrollTop : 0},500);
             return false;
         });
+
 
     })
 </script>

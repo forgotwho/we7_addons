@@ -5,7 +5,7 @@
             $(this).attr("checked", "checked")
         }
     });
-    //    多选按钮的赋值
+    /* 多选按钮的赋值*/
     $(".ui-radio").each(function () {
         var mjob = this;
         var data_value = $(this).attr("data-value").split(',');
@@ -17,7 +17,7 @@
         })
     });
 
-// 下拉选择组件的选中赋值
+/*下拉选择组件的选中赋值*/
     $("select").each(function () {
         if($(this).attr("data-select")!=""){
             $(this).val($(this).attr("data-select"));

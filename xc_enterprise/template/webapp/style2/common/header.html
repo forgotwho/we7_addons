@@ -15,7 +15,12 @@
     <script src="https://cdn.bootcss.com/Swiper/3.4.2/js/swiper.min.js"></script>
     <script src="https://cdn.bootcss.com/layer/3.1.0/mobile/layer.js"></script>
 
+<style type="text/css">
+    .topNav li{
+        border-bottom: none;
 
+    }
+</style>
 
 </head>
 
@@ -24,12 +29,12 @@
 
 <!--top-->
 
-<div class="top flex-display flex-alignC">
+<div class="top flex-display flex-alignC" >
     <div class="logo"><a href="{php echo $this->createMobileUrl('index',array('op'=>'index'))}"><img src="{php echo tomedia($webset['logo'])}" ></a></div>
     <div class="flex-flex1"></div>
     <div class="topNav clearfix">
         <ul>
-            <li  ><a href="{php echo $this->createMobileUrl('index',array('op'=>'index'))}">首页<div class="sub">HOME</div></a></li>
+            <li ><a href="{php echo $this->createMobileUrl('index',array('op'=>'index'))}">首页<div class="sub">HOME</div></a></li>
             <li><a href="{php echo $this->createMobileUrl('about',array('op'=>'about'))}">关于我们<div class="sub">ABOUT</div></a></li>
             <li><a href="{php echo $this->createMobileUrl('news',array('op'=>'news'))}">新闻资讯<div class="sub">NEWS</div></a></li>
             <li><a href="{php echo $this->createMobileUrl('product',array('op'=>'pro'))}">案例展示<div class="sub">CASE</div></a></li>
@@ -60,7 +65,7 @@
         <li class="subNews">
             <dl>
                 {loop $nav_news_class $nnindex $nnc}
-                <dd><a href="{php echo $this->createMobileUrl('news',array('op'=>'news','cid'=>$nnc['id']))}">{$nnc['name']}</a></dd>
+                <dd><a href="{php echo $this->createMobileUrl('news',array('op'=>'news','cid'=>$nnc['id']))}">{$nnc['contents']}</a></dd>
                 {/loop}
             </dl>
         </li>
@@ -80,10 +85,10 @@
 <!--top end-->
 
 
+
 <script>
 
     jQuery(document).ready(function (e) {
-
 
         $(".topBar").click(function () {
             $(".topMenu").show();
@@ -111,6 +116,8 @@
             $(this).attr('data-uit',index);
 
         })
+
+
 
     });
 

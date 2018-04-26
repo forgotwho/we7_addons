@@ -121,14 +121,14 @@
                     </div>
                 </div>
                 <script type="text/javascript"
-                        src="http://api.map.baidu.com/api?v=2.0&ak=0Q65KfBTyVAubiB1cdC5TVPb"></script>
+                        src="https://api.map.baidu.com/api?v=2.0&ak=0Q65KfBTyVAubiB1cdC5TVPb"></script>
                 <script type="text/javascript">
                     var geoc = new BMap.Geocoder();
                     var mp = new BMap.Map("allmap");
                     $ix = 0;
                     var point = new BMap.Point(116.404, 39.915);
                     var myIcon = null;
-                    //
+
                     if ($("#lng").val() === "" && $("#lat").val() === "") {
                         var myCity = new BMap.LocalCity();
                         myCity.get(myFuncity);
@@ -142,55 +142,46 @@
                         else {
                             marker = new BMap.Marker(point, {icon: myIcon});
                         }
-
-
-                        //  var marker = new BMap.Marker(point);
                         mp.addOverlay(marker);
                         marker.enableDragging();
-
-
                     }
-
-
                     mp.centerAndZoom(point, 14);
                     mp.enableScrollWheelZoom();
                     mp.enableInertialDragging();
                     mp.enableContinuousZoom();
 
-                    // 添加控件   城市列表
+                    /*添加控件   城市列表*/
                     var size = new BMap.Size(10, 20);
                     mp.addControl(new BMap.CityListControl({
                         anchor: BMAP_ANCHOR_TOP_LEFT,
                         offset: size,
-                        // 切换城市之间事件
                         onChangeBefore: function (e) {
 
                         },
-                        // 切换城市之后事件
                         onChangeAfter: function (res) {
                         }
                     }));
-
                     function add_control() {
                         var overView = new BMap.OverviewMapControl();
                         var overViewOpen = new BMap.OverviewMapControl({
                             isOpen: true,
                             anchor: BMAP_ANCHOR_BOTTOM_RIGHT
                         });
-                        //  var mapType1 = new BMap.MapTypeControl({mapTypes: [BMAP_NORMAL_MAP, BMAP_HYBRID_MAP]});
-                        //   var mapType2 = new BMap.MapTypeControl({anchor: BMAP_ANCHOR_TOP_LEFT});
-                        // map.addControl(mapType1);          //2D图，卫星图
-                        // map.addControl(mapType2);          //左上角，默认地图控件
-                        //map.setCurrentCity("北京");        //由于有3D图，需要设置城市哦
+                        /*
+                         var mapType1 = new BMap.MapTypeControl({mapTypes: [BMAP_NORMAL_MAP, BMAP_HYBRID_MAP]});
+                         var mapType2 = new BMap.MapTypeControl({anchor: BMAP_ANCHOR_TOP_LEFT});
+                         map.addControl(mapType1);          //2D图，卫星图
+                         map.addControl(mapType2);          //左上角，默认地图控件
+                        map.setCurrentCity("北京");        //由于有3D图，需要设置城市哦
+                        */
                         mp.addControl(overView);          //添加默认缩略地图控件
                         mp.addControl(overViewOpen);      //右下角，打开
                     }
 
                     add_control();
 
-
                     var uaddd = null;
-                    // 根据经纬度获取地址信息
+                     /*根据经纬度获取地址信息*/
                     function setaddds(pt) {
                         console.log(pt);
                         geoc.getLocation(pt, function (rs) {
@@ -202,12 +193,10 @@
                         });
 
                     }
-                    // 点击地图事件
+                    /*点击地图事件*/
                     mp.addEventListener("click", function (e) {
 
                         mp.clearOverlays();
-                        //  var marker = new BMap.Marker(e.point);
-
                         var marker;
                         if (myIcon == null) {
                             marker = new BMap.Marker(e.point);
@@ -217,19 +206,15 @@
                         }
 
                         mp.addOverlay(marker);
-//                        允许拖动标志
                         marker.enableDragging();
 
                         $("#lng").val(e.point.lng);
                         $("#lat").val(e.point.lat);
 
                         setaddds(e.point);
-//                        拖动标志事件
+                        /*拖动标志事件*/
                         marker.addEventListener("dragend", function (e) {
-
                             setaddds(e.point);
-
-
                             $("#lng").val(e.point.lng);
                             $("#lat").val(e.point.lat);
                             auotocom(e.target.$g);
@@ -238,9 +223,6 @@
                     });
 
                     mp.addEventListener("dragend", function (e) {
-
-                        //  console.log(e.target.$g);
-
                         auotocom(e.target.$g);
                     });
 
@@ -261,26 +243,18 @@
                             auotocom(e.target.$g);
                         })
                         auotocom(e.target.$g);
-                    })
-
-
-                    // auotocom(xpoint)
-
-
+                    });
                     function myFuncity(result) {
                         console.log(result);
                         var cityName = result.name;
 
                         mp.setCenter(cityName);
                         mp.setCurrentCity("台州市");
-
-
                         auotocom(cityName);
-                        // alert("当前定位城市:"+cityName);
                     }
 
 
-                    //查找
+                    /*查找*/
                     function G(id) {
                         return document.getElementById(id);
                     }
@@ -289,14 +263,14 @@
 
                     function auotocom($addd) {
                         ac = null;
-                        ac = new BMap.Autocomplete(    //建立一个自动完成的对象
+                        ac = new BMap.Autocomplete(
                             {
                                 "input": "suggestId"
                                 , "location": $addd
 
                             });
 
-                        ac.addEventListener("onhighlight", function (e) {  //鼠标放在下拉列表上的事件
+                        ac.addEventListener("onhighlight", function (e) {  /*鼠标放在下拉列表上的事件*/
                             var str = "";
                             var _value = e.fromitem.value;
                             var value = "";
@@ -313,7 +287,7 @@
                             str += "<br />ToItem<br />index = " + e.toitem.index + "<br />value = " + value;
                             G("searchResultPanel").innerHTML = str;
                         });
-                        ac.addEventListener("onconfirm", function (e) {    //鼠标点击下拉列表后的事件
+                        ac.addEventListener("onconfirm", function (e) {    /*鼠标点击下拉列表后的事件*/
                             var _value = e.item.value;
                             myValue = _value.province + _value.city + _value.district + _value.street + _value.business;
                             setpoint(myValue, _value.city);
@@ -324,14 +298,14 @@
                     }
                     auotocom();
                     function setPlace() {
-                        mp.clearOverlays();    //清除地图上所有覆盖物
+                        mp.clearOverlays();    /*清除地图上所有覆盖物*/
                         function myFun() {
-                            var pp = local.getResults().getPoi(0).point;    //获取第一个智能搜索的结果
+                            var pp = local.getResults().getPoi(0).point;    /*获取第一个智能搜索的结果*/
                             mp.centerAndZoom(pp, 18);
-                            mp.addOverlay(new BMap.Marker(pp));    //添加标注
+                            mp.addOverlay(new BMap.Marker(pp));    /*添加标注*/
                         }
 
-                        var local = new BMap.LocalSearch(mp, { //智能搜索
+                        var local = new BMap.LocalSearch(mp, { /*智能搜索*/
                             onSearchComplete: myFun
                         });
                         console.log(local);
@@ -347,10 +321,7 @@
                                 $("#lat").val(point.lat);
                             }
                         }, city)
-
                     }
-
-
                 </script>
                 <!--地图-->
 
